@@ -11,7 +11,7 @@ Ubuntu publickey error
 http://stackoverflow.com/questions/10255082/installing-r-from-cran-ubuntu-repository-no-public-key-error
 
 Rshinyserver upload app
- sudo cp -R /home/madhu/Madhubackup/MadhuL/Testingnames/ZettamineEngine/ /srv/shiny-server/ 
+sudo cp -R /home/madhu/Madhubackup/MadhuL/Testingnames/ZettamineEngine/ /srv/shiny-server/ 
 
 sudo chmod -R 777 /srv/shiny-server/ZettamineEngine/
 
@@ -19,10 +19,6 @@ Global R packages installation:
 
 sudo su -   -c "R -e \"install.packages('googleVis', repos='http://cran.rstudio.com/')\"" 
 
-
-
-nwserver:
-http://nwserver-02/root/nw-datascience
 
 Dplyr examples:
 http://seananderson.ca/2014/09/13/dplyr-intro.html
@@ -34,7 +30,7 @@ Rexample
 http://www.mayin.org/ajayshah/KB/R/
 
 
-17.06.2015
+
 Machine Learning Algorithms references
 
 Neural Network:
