@@ -1,0 +1,129 @@
+---
+title: "ML ALgorithms references"
+author: "Madhu"
+date: "13/7/2015"
+output: html_document
+---
+Rjava Error Reference:
+http://stackoverflow.com/questions/16438073/unable-to-install-rjava-in-r-3-0-in-ubuntu-13-04
+
+Ubuntu publickey error
+http://stackoverflow.com/questions/10255082/installing-r-from-cran-ubuntu-repository-no-public-key-error
+
+Rshinyserver upload app
+ sudo cp -R /home/madhu/Madhubackup/MadhuL/Testingnames/ZettamineEngine/ /srv/shiny-server/ 
+
+sudo chmod -R 777 /srv/shiny-server/ZettamineEngine/
+
+Global R packages installation:
+
+sudo su -   -c "R -e \"install.packages('googleVis', repos='http://cran.rstudio.com/')\"" 
+
+
+
+nwserver:
+http://nwserver-02/root/nw-datascience
+
+Dplyr examples:
+http://seananderson.ca/2014/09/13/dplyr-intro.html
+
+loop functions:
+http://www.ats.ucla.edu/stat/r/library/advanced_function_r.htm
+
+Rexample 
+http://www.mayin.org/ajayshah/KB/R/
+
+
+17.06.2015
+Machine Learning Algorithms references
+
+Neural Network:
+http://cowlet.org/2014/01/12/understanding-data-science-classification-with-neural-networks-in-r.html
+nnbackpropagation:
+http://galaxy.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html
+
+nnreferences
+http://www.di.fc.ul.pt/~jpn/r/neuralnets/neuralnets.html
+https://beckmw.wordpress.com/2013/11/14/visualizing-neural-networks-in-r-update/
+
+
+LR,LDA and knn
+http://rstudio-pubs-static.s3.amazonaws.com/14336_8e6cdabdc9434030b194dd9ba7b22ea2.html
+
+LDA EXAMPLE
+http://www.saedsayad.com/flash/DiscriminantAnalysis.pdf
+http://faculty.smu.edu/kyler/courses/7314/discrim.pdf
+http://courses.cs.tamu.edu/rgutier/cs790_w02/l6.pdf
+http://www.isip.piconepress.com/publications/reports/1998/isip/lda/lda_theory_v1.1.pdf
+http://rstudio-pubs-static.s3.amazonaws.com/35817_2552e05f1d4e4db8ba87b334101a43da.html
+
+
+
+
+Neo4J references:
+http://watch.neo4j.org/video/105896138?_ga=1.66073516.381085335.1434606836
+http://nicolewhite.github.io/2014/05/30/demo-of-rneo4j-part1.html
+http://nicolewhite.github.io/2014/05/30/demo-of-rneo4j-part2.html
+
+
+MLEXAMPLES
+http://rstudio-pubs-static.s3.amazonaws.com/20380_01d51a675de747c0a60ab5967cdedade.html
+http://rstudio-pubs-static.s3.amazonaws.com/53226_2f5a1140154646909fee0a6f01fc8bf2.html
+randomforest:
+https://rstudio-pubs-static.s3.amazonaws.com/29426_041c5ccb9a6a4bedb204e33144bb0ad4.html
+https://rstudio-pubs-static.s3.amazonaws.com/65901_3bcf603fa68045cc804b0f5a77f0d382.html
+
+BestCleaning and randomforest model using in R
+https://rstudio-pubs-static.s3.amazonaws.com/82081_803176d01c474211ab3f846da12646da.html
+
+http://rstudio-pubs-static.s3.amazonaws.com/23509_8a1eea519d564f43b951bb8ff04c0119.html
+
+
+http://www.numbrcrunch.com/blog/comparing-tree-based-classification-methods-using-the-kaggle-otto-competition
+
+https://www.kaggle.com/datacanary/otto-group-product-classification-challenge/xgboost-starter-code-with-r
+
+http://rstudio-pubs-static.s3.amazonaws.com/26206_205f24e385f242df9af92c6025ae9403.html
+
+http://rstudio-pubs-static.s3.amazonaws.com/59520_f25e40618a3a442ca45b110b57a24a6f.html
+
+https://github.com/jsihota/GTMachineLearning_Assignment_1/blob/master/poker/903122198.Rmd
+
+Rtutorial:
+https://stat545-ubc.github.io/syllabus.html
+
+SVM:
+http://www.yaksis.com/posts/why-use-svm.html
+https://rpubs.com/ryankelly/svm
+
+
+Parallel and serious execution of glm,svm and ada bootstrapping examples
+http://www.codeproject.com/Articles/741557/Machine-Learning-in-Parallel-with-Support-Vector-M
+http://jakemdrew.com/blog/watson.htm
+
+
+MachineLearning courses:
+https://learn.saylor.org/mod/page/view.php?id=951
+
+Statistics.
+http://www-bcf.usc.edu/~gareth/ISL/...........(Superb)
+http://www.stat.cmu.edu/~cshalizi/statcomp/14/lectures/11/lecture-11.html
+
+Formulae references:
+http://ww2.coastal.edu/kingw/statistics/R-tutorials/formulae.html
+http://ww2.coastal.edu/kingw/statistics/R-tutorials/multregr.html
+
+
+Multiple Regression:
+http://ww2.coastal.edu/kingw/statistics/R-tutorials/multregr.html
+
+Rmongodb:
+http://cran.r-project.org/web/packages/rmongodb/vignettes/rmongodb_introduction.html
+
+datascience Courseera:
+http://sux13.github.io/DataScienceSpCourseNotes/
+
+
+datatable:
+http://blog.yhathq.com/posts/fast-summary-statistics-with-data-dot-table.html
+
