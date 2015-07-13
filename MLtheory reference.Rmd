@@ -6,47 +6,136 @@ output: html_document
 ---
 
 Supervised learning problems are categorized into Regression and Classification problems as described in following sections.
-Regression - In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. It includes modelling and analysing several variables which consist of one dependent variable and one or more independent variables. It helps understand how does the dependent variable varies when one of the independent variable is varied, keeping all other variables fixed. 
+
+Regression 
+==================
+In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. It includes modelling and analysing several variables which consist of one dependent variable and one or more independent variables. It helps understand how does the dependent variable varies when one of the independent variable is varied, keeping all other variables fixed. 
 Example: Given the data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a continuous output, so this is a regression problem. 
 Here are some of the popular Regression techniques:
-1. Linear Regression - Linear regression is used to try and fit the data into a straight line. It models the linear relationship between a dependent variable and one or more independent variables. Linear regression can be used to forecast/predict the dependent variable based on the observed data set if the relation between the variables is known to be almost linear. 
-2. Locally Weighted Regression - Linear regression tries to fit a straight line to the data model, which is not a good fit in cases where the relationship is not linear or the data is too noisy. In such cases we use LWR. LWR removes the problem of linear regression by assigning weights to the training data. Weights are bigger for the data points closer to the data we are trying to predict. Since, LWR requires the entire data set every time (due to changes in weights), it is computationally expensive. 
-3. Logistic Regression - Unlike linear regression where the output is a continuous function, in logistic regression the output can have only a limited number of discrete values. It is used when the dependent variable is of binary or discrete nature. 
-4. Non-linear Regression - Nonlinear equations can take multiple forms. If the dependent variable cannot be modelled as a linear function of the independent variables, we use nonlinear regression to find a best fit model. The resulting model could be exponential, logarithmic, trigonometric etc. 
-Classification - In a classification problem, we are trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories on the basis of training data set. An algorithm which implements classification is known as a classifier. 
+================================================================
+1. Linear Regression :
+=====================
+
+
+Linear regression is used to try and fit the data into a straight line. It models the linear relationship between a dependent variable and one or more independent variables. Linear regression can be used to forecast/predict the dependent variable based on the observed data set if the relation between the variables is known to be almost linear. 
+
+
+2. Locally Weighted Regression :
+===============================
+
+
+Linear regression tries to fit a straight line to the data model, which is not a good fit in cases where the relationship is not linear or the data is too noisy. In such cases we use LWR. LWR removes the problem of linear regression by assigning weights to the training data. Weights are bigger for the data points closer to the data we are trying to predict. Since, LWR requires the entire data set every time (due to changes in weights), it is computationally expensive. 
+
+3. Logistic Regression :
+==============================
+Unlike linear regression where the output is a continuous function, in logistic regression the output can have only a limited number of discrete values. It is used when the dependent variable is of binary or discrete nature. 
+
+
+
+4. Non-linear Regression :
+===============================
+Nonlinear equations can take multiple forms. If the dependent variable cannot be modelled as a linear function of the independent variables, we use nonlinear regression to find a best fit model. The resulting model could be exponential, logarithmic, trigonometric etc. 
+
+
+Classification :
+==================
+In a classification problem, we are trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories on the basis of training data set. An algorithm which implements classification is known as a classifier. 
+
 Example: Predicting whether the house "sells for more or less than the asking price", we are classifying the houses based on price into two discrete categories. 
+
 Here are some of the popular Classification techniques:
-1. Decision Tree Classifier - This methodology uses a decision tree as the predictive model. It is used in cases where all the features have a finite discrete domain and there is a single target feature. The tree is created using the sample data where each internal node splits into 2 or more sub trees according to the discrete function of the input attribute value. 
-2. Naive Bayes Classifier - Naive Bayes classifier is a family of classifiers that work on the assumption that the value of a particular feature is independent of the value of any other feature (hence naive). The model assigns class labels to the data, represented as vectors of feature values. It is based on the Bayes theorem and hence are probabilistic in nature. This classification technique is used mostly in text classification (spam/not spam or sports, politics or entertainment etc.). 
-3. Random Forests Classifier - This model is an extension of decision tree classifier. Many classification trees are grown to classify a new object from an input vector. Each tree then gives a classification, and we say the tree votes for that class. The forest chooses the class which has the maximum number of votes. 
-4. Hidden Markov Model Classifier - It is a statistical model of a process consisting of two random variables, say A and B, which change their state sequentially. One of the two variables, A is termed as hidden variable as its state cannot be observed directly. The state of "A" changes with Markov property, i.e. the state change probability only depends on its current state and does not change in time. The variable B is called as the observed variable since its state can be directly observed. B does not follow the Markov property, but its state probability statically depends on the current state of A. 
+
+1. Decision Tree Classifier :
+==============================
+This methodology uses a decision tree as the predictive model. It is used in cases where all the features have a finite discrete domain and there is a single target feature. The tree is created using the sample data where each internal node splits into 2 or more sub trees according to the discrete function of the input attribute value. 
+
+2. Naive Bayes Classifier :
+============================
+Naive Bayes classifier is a family of classifiers that work on the assumption that the value of a particular feature is independent of the value of any other feature (hence naive). The model assigns class labels to the data, represented as vectors of feature values. It is based on the Bayes theorem and hence are probabilistic in nature. This classification technique is used mostly in text classification (spam/not spam or sports, politics or entertainment etc.). 
+
+3. Random Forests Classifier :
+===============================
+This model is an extension of decision tree classifier. Many classification trees are grown to classify a new object from an input vector. Each tree then gives a classification, and we say the tree votes for that class. The forest chooses the class which has the maximum number of votes. 
+
+
+4. Hidden Markov Model Classifier : It is a statistical model of a process consisting of two random variables, say A and B, which change their state sequentially. One of the two variables, A is termed as hidden variable as its state cannot be observed directly. The state of "A" changes with Markov property, i.e. the state change probability only depends on its current state and does not change in time. The variable B is called as the observed variable since its state can be directly observed. B does not follow the Markov property, but its state probability statically depends on the current state of A. 
+
+
 5. Multi-layer Perceptron - A multilayer perceptron is a biologically inspired feed-forward network that can be trained to represent a nonlinear mapping between input and output data. It consists of multiple layers, each containing multiple artificial neuron units and can be used for classification and regression tasks in a supervised learning approach. 
+
 6. K-nearest Neighbours - In k-NN classification, the object is classified by a majority vote of its neighbours. The object is assigned to the class which is most common among its k nearest neighbours. Weights are generally assigned to the neighbours while using this algorithm. 
+
 Unsupervised learning problems are categorized into Clustering and Collaborative filtering problems as described in following sections.
+
+
 Clustering - Clustering is division of observation into clusters or groups such that all observations within a cluster have some similarity between them. Unlike classification, we are not aware of the types of clusters that will be formed at the end of the clustering algorithm and hence it lies under unsupervised learning. 
+
+
 Here are some of the popular Classification techniques:
-1. Canopy Clustering - It is a pre-clustering algorithm used as a pre-processing step for K-Means algorithm. It is used to speed up the clustering process on large data sets, where using another algorithm directly would be impractical. 
-2. K-means Clustering - K-Means clustering is used to partition n observations into k sets, where each observation belongs to the cluster with the nearest mean. In other words, the model divides the observation into k sets such that the within-cluster sum of squares is minimized. 
-3. Fuzzy K-means Clustering - Unlike K-Means clustering, where each observation belongs to exactly one cluster, in Fuzzy K-Means clustering each observation can belong to multiple clusters with varying probability. Fuzzy K-Means tries to deal with the problem where points are somewhat in between centers. 
-4. Streaming K-means Clustering - Streaming K-Means Clustering is used in cases when data set is too large to fit into memory as a whole. It consists of two major steps, Streaming step and BallKMeans step. In streaming step, a single pass over the data produces as many centroids as it determines is optimal. This data is then passed through the BallKMeans step which further reduces the number of centroids to K. 
-5. Spectral Clustering - The goal of spectral clustering is to cluster data that is connected but not necessarily compact or clustered within convex boundaries. 
-6. Mean Shift Clustering - The mean shift algorithm is a nonparametric clustering technique which does not require prior knowledge of the number of clusters, and does not constrain the shape of the clusters. It works by treating the points as an empirical probability function where dense regions correspond to local maxima. 
-7. Correlation Clustering - Correlation Clustering is applied in cases where the actual data sets is not known, but the relation between the points in the data set is known. This model does not require prior knowledge of k, i.e. number of clusters to be formed. 
+
+1. Canopy Clustering :
+=======================
+It is a pre-clustering algorithm used as a pre-processing step for K-Means algorithm. It is used to speed up the clustering process on large data sets, where using another algorithm directly would be impractical. 
+
+2. K-means Clustering :
+========================
+K-Means clustering is used to partition n observations into k sets, where each observation belongs to the cluster with the nearest mean. In other words, the model divides the observation into k sets such that the within-cluster sum of squares is minimized. 
+
+3. Fuzzy K-means Clustering:
+============================
+Unlike K-Means clustering, where each observation belongs to exactly one cluster, in Fuzzy K-Means clustering each observation can belong to multiple clusters with varying probability. Fuzzy K-Means tries to deal with the problem where points are somewhat in between centers. 
+
+4. Streaming K-means Clustering:
+=================================
+Streaming K-Means Clustering is used in cases when data set is too large to fit into memory as a whole. It consists of two major steps, Streaming step and BallKMeans step. In streaming step, a single pass over the data produces as many centroids as it determines is optimal. This data is then passed through the BallKMeans step which further reduces the number of centroids to K. 
+
+5. Spectral Clustering :
+=================================
+The goal of spectral clustering is to cluster data that is connected but not necessarily compact or clustered within convex boundaries. 
+6. Mean Shift Clustering 
+=================================
+The mean shift algorithm is a nonparametric clustering technique which does not require prior knowledge of the number of clusters, and does not constrain the shape of the clusters. It works by treating the points as an empirical probability function where dense regions correspond to local maxima. 
+7. Correlation Clustering :
+=================================
+Correlation Clustering is applied in cases where the actual data sets is not known, but the relation between the points in the data set is known. This model does not require prior knowledge of k, i.e. number of clusters to be formed. 
 Collaborative Filtering - Collaborative Filtering (CF) is the process of making automatic predictions about the interests of a user based on his interest/disinterest similarity with other users. It is based on the assumption that if a user A has the same interest as a person B on some issue, then A is more likely to have the same interest as B on some other issue x as compared to any randomly chosen person. 
+
 Example: CF can be used to predict which food item a user would like based on the partial list of his likes and dislikes. 
 Collaborative Filtering can be classified as:
+
+
 1. User-based Collaborative Filtering - This CF technique has 2 major steps. Firstly, we look for subject/users who share the same preferences or interests as the active user. Then we use the ratings received from that set of like-minder users to predict the interest of the active user. To implement this model, neighborhood based algorithms are used generally. A subset of users are choses based on their similarity to the active users and their weighted combinations is used as the predicted rating for the active user. 
+
 2. Item-based Collaborative Filtering - Item based CF calculates the similarity between items based on the people's rating of those items. This is achieved by firstly finding similarity between all pairs of items. Once this step is completed, the system uses the most similar items to a user's already-rated items to generate a list of recommended items. 
 
+
+
 How do you know what machine learning algorithm to choose for your classification problem? Of course, if you really care about accuracy, your best bet is to test out a couple different ones (making sure to try different parameters within each algorithm as well), and select the best one by cross-validation. But if you’re simply looking for a “good enough” algorithm for your problem, or a place to start, here are some general guidelines I’ve found to work well over the years.
+
 How large is your training set?
+
 If your training set is small, high bias/low variance classifiers (e.g., Naive Bayes) have an advantage over low bias/high variance classifiers (e.g., kNN), since the latter will overfit. But low bias/high variance classifiers start to win out as your training set grows (they have lower asymptotic error), since high bias classifiers aren’t powerful enough to provide accurate models.
 You can also think of this as a generative model vs. discriminative model distinction.
 Advantages of some particular algorithms
-Advantages of Naive Bayes: Super simple, you’re just doing a bunch of counts. If the NB conditional independence assumption actually holds, a Naive Bayes classifier will converge quicker than discriminative models like logistic regression, so you need less training data. And even if the NB assumption doesn’t hold, a NB classifier still often does a great job in practice. A good bet if want something fast and easy that performs pretty well. Its main disadvantage is that it can’t learn interactions between features (e.g., it can’t learn that although you love movies with Brad Pitt and Tom Cruise, you hate movies where they’re together).
-Advantages of Logistic Regression: Lots of ways to regularize your model, and you don’t have to worry as much about your features being correlated, like you do in Naive Bayes. You also have a nice probabilistic interpretation, unlike decision trees or SVMs, and you can easily update your model to take in new data (using an online gradient descent method), again unlike decision trees or SVMs. Use it if you want a probabilistic framework (e.g., to easily adjust classification thresholds, to say when you’re unsure, or to get confidence intervals) or if you expect to receive more training data in the future that you want to be able to quickly incorporate into your model.
-Advantages of Decision Trees: Easy to interpret and explain (for some people – I’m not sure I fall into this camp). They easily handle feature interactions and they’re non-parametric, so you don’t have to worry about outliers or whether the data is linearly separable (e.g., decision trees easily take care of cases where you have class A at the low end of some feature x, class B in the mid-range of feature x, and A again at the high end). One disadvantage is that they don’t support online learning, so you have to rebuild your tree when new examples come on. Another disadvantage is that they easily overfit, but that’s where ensemble methods like random forests (or boosted trees) come in. Plus, random forests are often the winner for lots of problems in classification (usually slightly ahead of SVMs, I believe), they’re fast and scalable, and you don’t have to worry about tuning a bunch of parameters like you do with SVMs, so they seem to be quite popular these days.
-Advantages of SVMs: High accuracy, nice theoretical guarantees regarding overfitting, and with an appropriate kernel they can work well even if you’re data isn’t linearly separable in the base feature space. Especially popular in text classification problems where very high-dimensional spaces are the norm. Memory-intensive, hard to interpret, and kind of annoying to run and tune, though, so I think random forests are starting to steal the crown.
+
+
+Advantages of Naive Bayes:
+=================================
+Super simple, you’re just doing a bunch of counts. If the NB conditional independence assumption actually holds, a Naive Bayes classifier will converge quicker than discriminative models like logistic regression, so you need less training data. And even if the NB assumption doesn’t hold, a NB classifier still often does a great job in practice. A good bet if want something fast and easy that performs pretty well. Its main disadvantage is that it can’t learn interactions between features (e.g., it can’t learn that although you love movies with Brad Pitt and Tom Cruise, you hate movies where they’re together).
+
+Advantages of Logistic Regression: 
+=================================
+Lots of ways to regularize your model, and you don’t have to worry as much about your features being correlated, like you do in Naive Bayes. You also have a nice probabilistic interpretation, unlike decision trees or SVMs, and you can easily update your model to take in new data (using an online gradient descent method), again unlike decision trees or SVMs. Use it if you want a probabilistic framework (e.g., to easily adjust classification thresholds, to say when you’re unsure, or to get confidence intervals) or if you expect to receive more training data in the future that you want to be able to quickly incorporate into your model.
+
+
+Advantages of Decision Trees:
+=================================
+Easy to interpret and explain (for some people – I’m not sure I fall into this camp). They easily handle feature interactions and they’re non-parametric, so you don’t have to worry about outliers or whether the data is linearly separable (e.g., decision trees easily take care of cases where you have class A at the low end of some feature x, class B in the mid-range of feature x, and A again at the high end). One disadvantage is that they don’t support online learning, so you have to rebuild your tree when new examples come on. Another disadvantage is that they easily overfit, but that’s where ensemble methods like random forests (or boosted trees) come in. Plus, random forests are often the winner for lots of problems in classification (usually slightly ahead of SVMs, I believe), they’re fast and scalable, and you don’t have to worry about tuning a bunch of parameters like you do with SVMs, so they seem to be quite popular these days.
+
+
+Advantages of SVMs:
+=================================
+High accuracy, nice theoretical guarantees regarding overfitting, and with an appropriate kernel they can work well even if you’re data isn’t linearly separable in the base feature space. Especially popular in text classification problems where very high-dimensional spaces are the norm. Memory-intensive, hard to interpret, and kind of annoying to run and tune, though, so I think random forests are starting to steal the crown.
 
 
 
